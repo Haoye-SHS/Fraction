@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="IntelliJ_Fraction:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/IntelliJ_Fraction_jar</output-path>
+    <root id="archive" name="IntelliJ_Fraction.jar">
+      <element id="module-output" name="IntelliJ_Fraction" />
+    </root>
+  </artifact>
+</component>

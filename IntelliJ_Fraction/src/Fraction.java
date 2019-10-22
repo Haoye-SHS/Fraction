@@ -2,7 +2,7 @@
  * Represents a fraction
  *
  * @author Haoye
- * @version 1571770883
+ * @version 1571779401
  */
 
 public class Fraction {
