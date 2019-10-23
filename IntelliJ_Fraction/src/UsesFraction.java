@@ -35,7 +35,8 @@ public class UsesFraction {
                         result = f.add(number);
                     } else {
                         takeInput("frac");
-                        result = f.add(f);
+                        Fraction o = new Fraction(numerator, denominator);
+                        result = f.add(o);
                     }
                     break;
                 case 's':
@@ -47,7 +48,8 @@ public class UsesFraction {
                         result = f.subtract(number);
                     } else {
                         takeInput("frac");
-                        result = f.subtract(f);
+                        Fraction o = new Fraction(numerator, denominator);
+                        result = f.subtract(o);
                     }
                     break;
                 case 'm':
@@ -59,7 +61,8 @@ public class UsesFraction {
                         result = f.multiply(number);
                     } else {
                         takeInput("frac");
-                        result = f.multiply(f);
+                        Fraction o = new Fraction(numerator, denominator);
+                        result = f.multiply(o);
                     }
                     break;
                 case 'd':
@@ -71,14 +74,15 @@ public class UsesFraction {
                         result = f.divide(number);
                     } else {
                         takeInput("frac");
-                        result = f.divide(f);
+                        Fraction o = new Fraction(numerator, denominator);
+                        result = f.divide(o);
                     }
                     break;
             }
-            System.out.println("Your final fraction is: " + result.toString());
+            System.out.println("Your final fraction is " + result.toString());
             System.out.println("And its " + result.getValue() + " represented in decimal");
         } else {
-            System.out.println("Your final fraction is: " + f.toString());
+            System.out.println("Your final fraction is " + f.toString());
             System.out.println("And its " + f.getValue() + " represented in decimal");
         }
     }

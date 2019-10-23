@@ -2,7 +2,7 @@
  * Represents a fraction
  *
  * @author Haoye
- * @version 1571779401
+ * @version 1571854271
  */
 
 public class Fraction {
@@ -91,7 +91,7 @@ public class Fraction {
 
     @Override
     public String toString() {
-        return numerator + "/" + denominator;
+        return numerator / gcd(numerator, denominator) + "/" + denominator / gcd(numerator, denominator) + " or " + numerator + "/" + denominator + " unsimplified";
     }
 
     public double getValue() {
@@ -103,10 +103,5 @@ public class Fraction {
         if (a == 0)
             return b;
         return gcd(b % a, a);
-    }
-
-    public int lcm(int a, int b)
-    {
-        return (a*b)/gcd(a, b);
     }
 }
