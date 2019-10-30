@@ -18,6 +18,7 @@ public class Fraction {
     public Fraction(int numeratorIn, int denominatorIn) {
         numerator = numeratorIn;
         denominator = denominatorIn;
+        reduce();
     }
 
     public Fraction(Fraction fractionIn) {
@@ -35,10 +36,12 @@ public class Fraction {
 
     public void setNumerator(int newNumerator) {
         numerator = newNumerator;
+        reduce();
     }
 
     public void setDenominator(int newDenominator) {
         denominator = newDenominator;
+        reduce();
     }
 
     public Fraction add(int factor) {
@@ -91,17 +94,16 @@ public class Fraction {
 
     @Override
     public String toString() {
-        return numerator / gcd(numerator, denominator) + "/" + denominator / gcd(numerator, denominator) + " or " + numerator + "/" + denominator + " unsimplified";
+        return numerator + "/" + denominator;
     }
 
     public double getValue() {
         return (double)numerator/denominator;
     }
 
-    public int gcd(int a, int b)
-    {
-        if (a == 0)
-            return b;
-        return gcd(b % a, a);
+    private void reduce() {
+        int gcf = MyMath.gcf(numerator, denominator);
+        numerator = numerator/gcf;
+        denominator = denominator/gcf;
     }
 }
