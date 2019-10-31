@@ -2,7 +2,7 @@
  * Represents a fraction
  *
  * @author Haoye
- * @version 1571854271
+ * @version 1572485864
  */
 
 public class Fraction {
@@ -23,7 +23,7 @@ public class Fraction {
 
     public Fraction(Fraction fractionIn) {
         numerator = fractionIn.numerator;
-        denominator = fractionIn.numerator;
+        denominator = fractionIn.denominator;
     }
 
     public int getNumerator() {
@@ -102,8 +102,14 @@ public class Fraction {
     }
 
     private void reduce() {
-        int gcf = MyMath.gcf(numerator, denominator);
-        numerator = numerator/gcf;
-        denominator = denominator/gcf;
+        if (numerator != 0 && denominator != 0) {
+            int gcf = MyMath.gcf(numerator, denominator);
+            numerator = numerator / gcf;
+            denominator = denominator / gcf;
+        }
+        if (numerator < 0 && denominator < 0) {
+            numerator = 0 - numerator;
+            denominator = 0 - denominator;
+        }
     }
 }
