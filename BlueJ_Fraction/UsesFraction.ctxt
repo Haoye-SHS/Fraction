@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=UsesFraction
+comment1.params=arg
+comment1.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=void\ aliasFun()
+comment3.params=type
+comment3.target=void\ takeInput(java.lang.String)
+numComments=4
