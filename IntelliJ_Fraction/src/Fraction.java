@@ -1,8 +1,13 @@
 /**
  * Represents a fraction
+ * Allow construction of Fraction type object consisting of a numerator and a denominator
+ * Allow operation such as addition, subtraction, multiplication, and division to be performed upon fraction objects
+ * Any fraction project will be reduced to the simplest form
+ * Allow the conversion to String value to print out the fraction
+ * Allow obtaining the decimal value of the fraction
  *
  * @author Haoye
- * @version 1573152944
+ * @version 1573186958
  */
 
 public class Fraction {

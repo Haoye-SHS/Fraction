@@ -1,3 +1,10 @@
+/**
+ * this is a math class whose sole purpose is to calculate the greatest common factor of two input integers
+ *
+ * @author Haoye
+ * @version 1573186958
+ */
+
 public class MyMath {
     /**
      * @param a is the first integer input
