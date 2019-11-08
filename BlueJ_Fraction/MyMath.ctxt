@@ -1,5 +1,7 @@
 #BlueJ class context
 comment0.target=MyMath
+comment0.text=\r\n\ this\ is\ a\ math\ class\ whose\ sole\ purpose\ is\ to\ calculate\ the\ greatest\ common\ factor\ of\ two\ input\ integers\r\n\r\n\ @author\ Haoye\r\n\ @version\ 1573186958\r\n
 comment1.params=a\ b
 comment1.target=int\ gcf(int,\ int)
+comment1.text=\r\n\ @param\ a\ is\ the\ first\ integer\ input\r\n\ @param\ b\ is\ teh\ second\ integer\ input\r\n\ @return\ the\ gcf\ of\ input\ a\ and\ b\r\n
 numComments=2
